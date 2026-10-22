@@ -84,3 +84,26 @@
 #6. La única biblioteca externa permitida es tabulate
 #7. No cambies los límites de las condiciones ni la multa máxima
 #8. No llames a las funciones desde este archivo; se llaman desde menu/menu.py
+
+from tabulate import tabulate
+
+
+def leerDias() -> int:
+    return int(input("Ingrese los días de retraso: "))
+
+
+def calcularMulta(dias: int) -> float:
+    if dias <= 10:
+        multa = dias * 5
+    else:
+        multa = (10 * 5) + ((dias - 10) * 10)
+
+    if multa > 200:
+        multa = 200
+
+    return float(multa)
+
+
+def mostrarMulta(multa: float) -> None:
+    tabla = [["Multa final", f"${multa:.2f}"]]
+    print(tabulate(tabla, headers=["Concepto", "Importe"], tablefmt="grid"))

@@ -1,0 +1,74 @@
+#Manera inicial de main.py:
+"""from menu.menu import mostrarMenu
+
+def main():
+    while True:
+        opcion = mostrarMenu()
+
+        if opcion == "1":
+            print("Ejercicio 1 pendeinte.")
+        elif opcion == "2":
+            print("Ejercicio 2 pendiente.")
+        elif opcion == "3":
+            print("Ejercicio 3 pendiente.")
+        elif opcion == "4":
+            print("Saliendo del programa...")
+            break
+        else:
+            print("Opción no válida. Por favor, seleccione una opción válida.")
+
+if __name__ == "__main__":
+    main()"""
+
+#Mensaje para copilot:
+
+"""Ejercicio1:
+Implementa en Python el código del archivo actual siguiendo exactamente las ocho secciones de especificación que aparecen en los comentarios.
+
+Respeta el algoritmo y el contrato de estas funciones:
+- leerKilometros()
+- calcularImporte(kilometros)
+- mostrarImporte(importe)
+
+El importe inicial es de $35 más $9 por cada kilómetro. Si los kilómetros recorridos son mayores a 20, aplica un descuento del 10% al importe inicial.
+
+Utiliza la biblioteca tabulate para mostrar el importe final en una tabla, con dos decimales.
+
+No modifiques ni elimines los comentarios de la especificación. No agregues funciones, clases, validaciones, descuentos ni reglas que no estén indicados. La única biblioteca externa permitida es tabulate. No llames a las funciones desde este archivo; serán llamadas desde menu/menu.py.
+
+Genera la implementación debajo de los comentarios existentes."""
+
+
+"""Ejercicio2:
+Implementa en Python el código del archivo actual siguiendo exactamente las ocho secciones de especificación que aparecen en los comentarios.
+
+Respeta el algoritmo y el contrato de estas funciones:
+- leerVentas()
+- calcularComision(ventas)
+- calcularBono(ventas)
+- mostrarPago(comision, bono, total)
+
+La comisión es del 5% cuando las ventas son menores a $10,000 y del 8% cuando son iguales o mayores a $10,000. Si las ventas superan los $50,000, corresponde un bono de $1,000; de lo contrario, el bono es $0. El total se calcula sumando la comisión y el bono.
+
+Utiliza la biblioteca tabulate para mostrar la comisión, el bono y el total, con dos decimales.
+
+No modifiques ni elimines los comentarios de la especificación. No agregues funciones, clases, sueldo base, incentivos, validaciones ni reglas que no estén indicados. La única biblioteca externa permitida es tabulate. No llames a las funciones desde este archivo; serán llamadas desde menu/menu.py.
+
+Genera la implementación debajo de los comentarios existentes."""
+
+
+"""Ejercicio3:
+Implementa en Python el código del archivo actual siguiendo exactamente las ocho secciones de especificación que aparecen en los comentarios.
+
+Respeta el algoritmo y el contrato de estas funciones:
+- leerDias()
+- calcularMulta(dias)
+- mostrarMulta(multa)
+
+Los primeros 10 días de retraso cuestan $5 por día. A partir del día 11, cada día adicional cuesta $10. La multa máxima es de $200.
+
+Utiliza la biblioteca tabulate para mostrar la multa final, con dos decimales.
+
+No modifiques ni elimines los comentarios de la especificación. No agregues funciones, clases, tarifas, descuentos, validaciones ni reglas que no estén indicados. La única biblioteca externa permitida es tabulate. No llames a las funciones desde este archivo; serán llamadas desde menu/menu.py.
+
+Genera la implementación debajo de los comentarios existentes."""

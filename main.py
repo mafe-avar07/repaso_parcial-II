@@ -1,4 +1,5 @@
 from menu.menu import mostrarMenu
+from menu.menu import mostrarMenu, ejecutarEjercicio3
 
 def main():
     while True:
@@ -9,7 +10,7 @@ def main():
         elif opcion == "2":
             print("Ejercicio 2 pendiente.")
         elif opcion == "3":
-            print("Ejercicio 3 pendiente.")
+            ejecutarEjercicio3()
         elif opcion == "4":
             print("Saliendo del programa...")
             break
